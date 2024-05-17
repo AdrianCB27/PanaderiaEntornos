@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería - Panadería Repostería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d2691e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #d2691e;
+            text-align: center;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .product-item {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .product-item:hover img {
+            transform: scale(1.05);
+        }
+        .product-item h3 {
+            color: #d2691e;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+        .product-item:hover h3 {
+            color: #a0522d;
+        }
+        .product-item p {
+            color: #555;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .product-item .price {
+            font-size: 18px;
+            color: #d2691e;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Panadería Repostería</h1>
+</header>
+
+<div class="container">
+    <h2>Productos de Repostería</h2>
+    <div class="product">
+        <div class="product-item">
+            <img src="imagenes_reposteria_html/tarta-chocolate-ganache-b3fb28758f16632e22798ce06f06a80e.jpg" alt="Tarta de Chocolate">
+            <h3>Tarta de Chocolate</h3>
+            <p>Deliciosa tarta de chocolate con relleno cremoso y cobertura de ganache.</p>
+            <p class="price">€15.00</p>
+        </div>
+        <div class="product-item">
+            <img src="imagenes_reposteria_html/cupcakes-de-vainilla.jpg" alt="Cupcakes de Vainilla">
+            <h3>Cupcakes de Vainilla</h3>
+            <p>Suaves cupcakes de vainilla con glaseado de crema de mantequilla.</p>
+            <p class="price">€2.50</p>
+        </div>
+        <div class="product-item">
+            <img src="imagenes_reposteria_html/macarons-per-fer-amb-nens.jpg" alt="Macarons">
+            <h3>Macarons</h3>
+            <p>Macarons franceses en varios sabores: frambuesa, limón y pistacho.</p>
+            <p class="price">€1.50 cada uno</p>
+        </div>
+        <div class="product-item">
+            <img src="imagenes_reposteria_html/212665734-pastel-de-fresa-con-crema-batida-y-fresas-frescas-enfoque-selectivo.jpg" alt="Pastel de Fresa">
+            <h3>Pastel de Fresa</h3>
+            <p>Pastel de fresa con crema batida y fresas frescas.</p>
+            <p class="price">€12.00</p>
+        </div>
+        <div class="product-item">
+            <img src="imagenes_reposteria_html/como_hacer_glaseado_para_galletas_50992_orig.jpg" alt="Galletas Decoradas">
+            <h3>Galletas Decoradas</h3>
+            <p>Galletas de mantequilla decoradas con glaseado real.</p>
+            <p class="price">€1.00 cada una</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
